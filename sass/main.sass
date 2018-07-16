@@ -1,0 +1,105 @@
+@import "reset"
+
+$header-color: #7C7C7C
+$hover-color:  rgb(255, 56, 56)
+$main-font:    Arial
+
+
+body 
+    font-family: $main-font
+    header, .main-content
+        max-width: 1200px
+        margin: 0 auto
+
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 25px 0
+    color: $header-color
+    text-transform: uppercase
+    h1 
+        position: relative
+        font-size: 1.5em
+    .custom-underline:before
+        background-color: $header-color
+    button
+        margin-left: 15px
+        padding: 5px 10px
+        border: 2px solid $header-color
+        color: $header-color
+        font-weight: bold
+        text-transform: uppercase
+        transition-duration: .2s
+        &:hover
+            color: #FFFFFF
+            background-color: $hover-color
+            border-color: $hover-color
+    .active-button
+        color: $hover-color
+        border-color: $hover-color
+        
+.custom-underline
+    position: relative
+    &:before
+        content: ''
+        position: absolute
+        bottom: -4px
+        width: 30%
+        height: 2px
+
+
+
+.main-content
+    .gallery-wrapper
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        .image-wrapper
+            position: relative
+            width: 25%
+            padding-top: 25%
+            overflow: hidden
+            box-shadow: 0px 0px 0px 1px $header-color inset, 0px 0px 0px 1px $header-color
+            transition-duration: .3s
+            .image-holder
+                position: absolute
+                top: 10px
+                bottom: 10px
+                left: 10px
+                right: 10px
+                display: flex
+                justify-content: center
+                align-content: center
+                overflow: hidden 
+                transition-duration: .3s  
+                cursor: pointer             
+                img 
+                    height: 100%
+                    filter: grayscale(100%)
+                    transition-duration: .3s
+            &:hover
+                box-shadow: 0px 0px 0px 1px $hover-color inset, 0px 0px 0px 1px $hover-color
+                z-index: 100
+                .image-holder
+                    background-color: $hover-color
+                    &:before
+                        content: '+'
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        background-color: rgba(255, 56, 56, 0.8)
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        color: #FFFFFF
+                        font-size: 3em
+                        z-index: 150
+                        transition-duration: .3s 
+                    // img 
+                    //     opacity: 0.5
+                    
+                    
+            
+
+
