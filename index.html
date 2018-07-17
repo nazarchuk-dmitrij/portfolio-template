@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <h1 class="custom-underline">Portfolio</h1>
+        <h1 class="custom-underline"><a href="intex.html">Portfolio</a></h1>
         <nav>
             <button class="active-button">All</button>
             <button>Beach</button>
@@ -20,65 +20,95 @@
             <button>Forest</button>
         </nav>
     </header>
-    <div class="main-content">
-        <div class="gallery-wrapper">
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/beach-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/city-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/beach-2.jpg" alt="">
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/city-2.jpg" alt="">
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/forest-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/beach-3.jpg" alt="">
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/city-3.jpg" alt="">
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/city-4.jpg" alt="">
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/forest-2.jpg" alt="">
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/forest-3.jpg" alt="">
-                </div>
-            </div>
-            <div class="image-wrapper">
-                <div class="image-holder">
-                    <img src="assets/pictures/beach-4.jpg" alt="">
-                </div>
+    <div class="gallery-wrapper">
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/beach-1.jpg" alt="">
             </div>
         </div>
-        <div class="contact-form-wrapper"></div>
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/city-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/beach-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/city-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/forest-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/beach-3.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/city-3.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/city-4.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/forest-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/forest-3.jpg" alt="">
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-holder">
+                <img src="assets/pictures/beach-4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="contact-form-wrapper">
+        <div class="contact-form-holder">
+            <h2 class="custom-underline">Kontakt</h2>
+            <form action="process.php" method="POST" class="contact-form">
+                <div class="form-first-row">
+                    <div class="form-column">
+                        <label for="fullname">Imię i Nazwisko</label>
+                        <input type="text" id="fullname" name="fullname">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="form-column">
+                        <div class="info">
+                            Lorem ipsum dolor sit amet, usu novum congue partem, usu 
+                            in natum option, ei summo similique mea. Menandri tincidunt scribentur 
+                            qui ea, eu quod temporibus mei. Novum invidunt elaboraret ne nec.
+                        </div>
+                        <div class="info contact-details">
+                            Jan Nowak <br>
+                            +48 111 222 33 <br>
+                            jan@nowak.pl <br>
+                            www.nowak.pl
+                        </div>
+                    </div>
+                </div>
+                <div class="form-second-row">
+                    <label for="message">Wiadomość</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button type="submit">Wyślij</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
