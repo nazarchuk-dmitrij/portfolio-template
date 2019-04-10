@@ -1,1 +1,1 @@
-Simple JS + PHP Portfolio Page https://nazarchuk-dmitrij.github.io/portfolio-template/
+Simple JS Portfolio Page https://nazarchuk-dmitrij.github.io/portfolio-template/
