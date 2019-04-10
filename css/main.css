@@ -285,6 +285,7 @@ header .active-button {
 }
 
 .contact-form-wrapper .contact-form-holder .contact-form .form-first-row .form-column .contact-details {
+  line-height: 1.3em;
   text-transform: uppercase;
 }
 
